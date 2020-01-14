@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classes from './Modal.module.css';
 import Backdrop from '../Backdrop/Backdrop';
-import Ribbon from '../../../highComponents/Ribbon';
+import Ribbon from '../../../highComponents/Ribbon/Ribbon';
 
 class Modal extends Component {
 	shouldComponentUpdate(nextProps, nextState, nextContext) {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import Ribbon from '../../highComponents/Ribbon';
-import Modal from '../../components/UI/Modal/Modal';
 import Burger from '../../components/Burger/Burger';
+import Modal from '../../components/UI/Modal/Modal';
+import Ribbon from '../../highComponents/Ribbon/Ribbon';
 import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 
@@ -48,8 +48,7 @@ class BurgerBuilder extends Component {
 			oldCount = this.state.ingredients[type],
 			updatedCount = oldCount + 1,
 			updatedIngredients = {...this.state.ingredients};
-		updatedIngredients[type] = updatedCount;
-
+			updatedIngredients[type] = updatedCount;
 		const
 			priceIncrease = INGREDIENTS_PRICE[type],
 			oldPrice = this.state.totalPrice,

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Button from '../../UI/Button/Button';
-import Ribbon from '../../../highComponents/Ribbon';
+import Ribbon from '../../../highComponents/Ribbon/Ribbon';
 
 class OrderSummary extends Component {
 	componentDidUpdate(prevProps, prevState, snapshot) {
